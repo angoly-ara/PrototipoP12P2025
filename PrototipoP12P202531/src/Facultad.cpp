@@ -49,7 +49,7 @@ void Facultad::mostrarDatos() {
         cout << " => Promedio: " << promedios[i] << endl;
     }
     cout << "Promedio de la facultad: " << promedioFacultad << endl;
-    cout << "Nota más alta: " << getMayorNota() << ", más baja: " << getMenorNota() << endl;
+    cout << "Nota mas alta: " << getMayorNota() << ", mas baja: " << getMenorNota() << endl;
 }
 
 float Facultad::getPromedioFacultad() {
