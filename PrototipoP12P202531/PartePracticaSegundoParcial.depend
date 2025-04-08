@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1744130166 source:c:\users\enrique\desktop\progra1\prototipop12p2025\prototipop12p2025\main.cpp
+	"Facultad.h"
+	<iostream>
+
+1744130169 c:\users\enrique\desktop\progra1\prototipop12p2025\prototipop12p2025\include\facultad.h
+	<string>
+
+1744130162 source:c:\users\enrique\desktop\progra1\prototipop12p2025\prototipop12p2025\src\facultad.cpp
+	"Facultad.h"
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<iomanip>
+
