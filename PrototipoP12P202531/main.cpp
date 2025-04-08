@@ -1,36 +1,40 @@
+// Programa de Angoly Araujo
+// Abril 2025
+// Segundo Parcial Parte Practica
 #include "Facultad.h"
 #include <iostream>
 using namespace std;
 
 int main() {
-    int opcion;
-    Facultad* mejorFacultad = nullptr;
-    float mejorPromedio = 0;
+    Facultad facultades[3];
+    string nombre;
+    int i = 0;
 
-    do {
-        cout << "Ingrese el nombre de la facultad: ";
-        string nombre;
+    while (i < 3) {
+        cout << "Ingrese el nombre de la facultad #" << i + 1 << ": ";
         cin >> nombre;
 
-        Facultad* f = new Facultad(nombre);
-        f->generarNotas();
-        f->calcularPromedios();
-        f->mostrarDatos();
+        facultades[i].setNombre(nombre);
+        facultades[i].generarNotas();
+        facultades[i].calcularPromedios();
+        facultades[i].mostrarDatos();
 
-        if (f->getPromedioFacultad() > mejorPromedio) {
-            mejorPromedio = f->getPromedioFacultad();
-            mejorFacultad = f;
-        }
-
-        cout << "¿Desea ingresar otra facultad? (1 = Sí / 0 = No): ";
-        cin >> opcion;
-
-    } while (opcion == 1);
-
-    if (mejorFacultad != nullptr) {
-        cout << "\nLa mejor facultad fue: " << mejorFacultad->getNombre()
-             << " con un promedio de: " << mejorFacultad->getPromedioFacultad() << endl;
+        i++;
     }
+
+    // Determinar la mejor facultad
+    int mejorIdx = 0;
+    float mejorPromedio = facultades[0].getPromedioFacultad();
+
+    for (int j = 1; j < 3; ++j) {
+        if (facultades[j].getPromedioFacultad() > mejorPromedio) {
+            mejorPromedio = facultades[j].getPromedioFacultad();
+            mejorIdx = j;
+        }
+    }
+
+    cout << "\nLa mejor facultad fue: " << facultades[mejorIdx].getNombre()
+         << " con un promedio de: " << mejorPromedio << endl;
 
     return 0;
 }

@@ -12,15 +12,17 @@ private:
     float promedioFacultad;
 
 public:
-    Facultad(string nombre);
+    Facultad();
+    void setNombre(string nombre);
+    string getNombre();
     void generarNotas();
     void calcularPromedios();
     void mostrarDatos();
     float getPromedioFacultad();
-    string getNombre();
     float getMayorNota();
     float getMenorNota();
 };
 
 #endif
+
 
