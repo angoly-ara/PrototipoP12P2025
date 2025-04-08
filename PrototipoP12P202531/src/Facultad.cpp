@@ -15,7 +15,7 @@ void Facultad::setNombre(string nombre) {
 string Facultad::getNombre() {
     return nombre;
 }
-
+// Coloca valores aleatorios con un maximo de la nota solicitada
 void Facultad::generarNotas() {
     srand(time(0));
     for (int i = 0; i < 5; ++i) {
@@ -38,7 +38,7 @@ void Facultad::calcularPromedios() {
     }
     promedioFacultad = suma / 5;
 }
-
+//Genera el promido y la nota más alta de la facultad en especifico
 void Facultad::mostrarDatos() {
     cout << "\nFacultad: " << nombre << endl;
     for (int i = 0; i < 5; ++i) {

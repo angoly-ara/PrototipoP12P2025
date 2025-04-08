@@ -13,3 +13,17 @@
 	<ctime>
 	<iomanip>
 
+1744131237 source:c:\users\enrique\desktop\progra1\prototipop12p2025\prototipop12p202531\main.cpp
+	"Facultad.h"
+	<iostream>
+
+1744131001 c:\users\enrique\desktop\progra1\prototipop12p2025\prototipop12p202531\include\facultad.h
+	<string>
+
+1744131390 source:c:\users\enrique\desktop\progra1\prototipop12p2025\prototipop12p202531\src\facultad.cpp
+	"Facultad.h"
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+

@@ -10,6 +10,7 @@ int main() {
     string nombre;
     int i = 0;
 
+// Se ingresa el nombre de las facultades
     while (i < 3) {
         cout << "Ingrese el nombre de la facultad #" << i + 1 << ": ";
         cin >> nombre;
@@ -22,7 +23,7 @@ int main() {
         i++;
     }
 
-    // Determinar la mejor facultad
+    // Determinar la mejor facultad y mejor promedio
     int mejorIdx = 0;
     float mejorPromedio = facultades[0].getPromedioFacultad();
 
